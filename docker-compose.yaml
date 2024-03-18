@@ -26,7 +26,7 @@ services:
       - TZ=Europe/Madrid
       - IPAM_DATABASE_HOST=phpipam-mariadb
       - IPAM_DATABASE_PASS=my_secret_phpipam_pass
-      - SCAN_INTERVAL=1h
+      - SCAN_INTERVAL=15m
     restart: unless-stopped
     volumes:
       - phpipam-ca:/usr/local/share/ca-certificates:ro
